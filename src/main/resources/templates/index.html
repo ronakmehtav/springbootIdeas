@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head th:replace="html_fragments/header :: html_head('Home')">
+</head>
+<body>
+    <script async src="index.js"></script>
+    <h1 id="header">Hello ! <th:block th:replace="html_fragments/reactState('Extra Information')"></th:block></h1>
+    <p>Welcome to <span th:text="${appName}">Our App</span></p>
+    <p>You are listening it on port <span th:text="${port}">Undefined</span></p>
+</body>
+</html>
